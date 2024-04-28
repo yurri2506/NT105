@@ -4,6 +4,7 @@ import BaiVietBlog from '../pages/BaiVietBlog'
 import BoiBai52La from '../pages/BoiBai52La'
 import BoiBaiTarot from '../pages/BoiBaiTarot'
 import BoiNgaySinh from '../pages/BoiNgaySinh'
+import Home from '../pages/Home'
 
 export const routes = [
   // Public
@@ -11,10 +12,10 @@ export const routes = [
     path: "/",
     element: <LayoutDefault />,
     children: [
-      // {
-      //   index: true,
-      //   element: <Home />,
-      // },
+      {
+        index: true,
+        element: <Home />,
+      },
       {
         path: "baivietblog",
         element: <BaiVietBlog />,
